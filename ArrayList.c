@@ -1,5 +1,5 @@
 /*
-@ÏßÐÔ±íSqList ---Ë³Ðò±íµÄÔö¡¢É¾¡¢²é¡¢¸Ä 
+@çº¿æ€§è¡¨SqList ---é¡ºåºè¡¨çš„å¢žã€åˆ ã€æŸ¥ã€æ”¹ 
 */
 #define ElemType char
 #define NUM 100
@@ -8,7 +8,7 @@ typedef struct{
 	int length;
 }SqList;
 /**********************
-@³õÊ¼»¯
+@åˆå§‹åŒ–
 **********************/
 void InitSqlist(SqList *S)
 {
@@ -16,7 +16,7 @@ void InitSqlist(SqList *S)
 	S->length=0;
  } 
 /*
-@²åÈë 
+@æ’å…¥ 
 */
 void SqListInsert(SqList *S)
 {
@@ -42,7 +42,7 @@ void SqListInsert(SqList *S)
 	
 }
 /**********************
-@Ôö¼Ó 
+@å¢žåŠ  
 **********************/
 void ADDSqList(SqList *S)
 {
@@ -54,7 +54,7 @@ void ADDSqList(SqList *S)
 	S->length++;
 }
 /**********************
-@É¾³ý 
+@åˆ é™¤ 
 **********************/
 void DeleteSqList(SqList *S)
 {
@@ -83,7 +83,7 @@ void DeleteSqList(SqList *S)
 	S->length--;
 }
 /**********************
-@²éÕÒ
+@æŸ¥æ‰¾
 **********************/ 
 void SearchSqList(SqList *S)
 {
@@ -117,7 +117,7 @@ void SearchSqList(SqList *S)
 	
 }
 /**********************
-@¸ü»» 
+@æ›´æ¢ 
 **********************/
 void ChangeSqList(SqList *S)
 {
@@ -139,11 +139,8 @@ void ChangeSqList(SqList *S)
 	}
 }
 /*****************************************************************************************************/
-/*********************************
-@150µ¥Á´±í 
-*********************************/
 /*
-@ÏßÐÔ±íLinkList----µ¥Á´±íµÄÍ·²å´´½¨¡¢Î²²å·¨´´½¨Á´±íÖ®¡¢É¾¡¢²é¡¢¸Ä 
+@çº¿æ€§è¡¨LinkList----å•é“¾è¡¨çš„å¤´æ’åˆ›å»ºã€å°¾æ’æ³•åˆ›å»ºé“¾è¡¨ä¹‹ã€åˆ ã€æŸ¥ã€æ”¹ 
 */
 typedef int ElemType;
 typedef struct LNode{
@@ -151,7 +148,7 @@ typedef struct LNode{
 	struct LNode *next;
 }*LinkList,LNode; 
 /*
-@Í·²å·¨´´½¨Á´±í 
+@å¤´æ’æ³•åˆ›å»ºé“¾è¡¨ 
 */
 void CreatList_H(LinkList* L)
 {
@@ -173,7 +170,7 @@ void CreatList_H(LinkList* L)
 	}
 }
 /*
-@Î²²å·¨´´½¨Á´±í 
+@å°¾æ’æ³•åˆ›å»ºé“¾è¡¨ 
 */
 void CreatList_R(LinkList* L)
 {
@@ -196,7 +193,7 @@ void CreatList_R(LinkList* L)
 	}	
  } 
 /*
-@²éÕÒ 
+@æŸ¥æ‰¾ 
 */
 void SearchLinkList(LinkList* L)
 {
@@ -226,7 +223,7 @@ void SearchLinkList(LinkList* L)
 	
 }
 /*
-@ÐÞ¸Ä 
+@ä¿®æ”¹ 
 */
 void ChangeLinkList(LinkList *L)
 {
@@ -245,7 +242,7 @@ void ChangeLinkList(LinkList *L)
 }
 /*****************************************************************************************************/
 /*
-@Ë«ÏòÁ´±íDuList 
+@åŒå‘é“¾è¡¨DuList 
 */
 #define ElemType int 
 typedef struct DuNode{
@@ -254,8 +251,8 @@ typedef struct DuNode{
 	struct DuNode *next;
 }DuNode,*DuList;
 /*
-@´´½¨ 
-@Ë¼Â·£º±Èµ¥Á´±í¶àÁËÒ»²½²Ù×÷¾ÍÊÇÇ°Ö¸ÕëÖ¸ÏòÇ°Ò»¸öÔªËØ 
+@åˆ›å»º 
+@æ€è·¯ï¼šæ¯”å•é“¾è¡¨å¤šäº†ä¸€æ­¥æ“ä½œå°±æ˜¯å‰æŒ‡é’ˆæŒ‡å‘å‰ä¸€ä¸ªå…ƒç´  
 */
 void CreatDuList(DuList *L)
 {
@@ -280,7 +277,7 @@ void CreatDuList(DuList *L)
 	}
 }
 /*
-@Ë«ÏòÁ´±í²éÕÒ 
+@åŒå‘é“¾è¡¨æŸ¥æ‰¾ 
 */
 void SearchDuList(DuList L)
 {
@@ -305,7 +302,7 @@ void SearchDuList(DuList L)
 	printf("No data!\n");
 }
 /*
-@Ë«ÏòÁ´±íµÄ¸Ä±ä 
+@åŒå‘é“¾è¡¨çš„æ”¹å˜ 
 */
 void ChangeDuList(DuList *L)
 {
@@ -326,8 +323,8 @@ void ChangeDuList(DuList *L)
 	}
 }
 /*
-@É¾³ý 
-@Ë¼Â·£º(1)r->prior->next=r->next; (2)r->next->prior=r->prior;    
+@åˆ é™¤ 
+@æ€è·¯ï¼š(1)r->prior->next=r->next; (2)r->next->prior=r->prior;    
 */
 void ListDelete_DuL(DuList *L)
 {
@@ -350,8 +347,8 @@ void ListDelete_DuL(DuList *L)
 	}
 }
 /*
-@Ë«ÏòÁ´±íµÄ²åÈë
-@Ë¼Â·:(1)s->prior=p->prior (2)p->prior->next=s;(3)s->next=p;(4)p->prior=s 
+@åŒå‘é“¾è¡¨çš„æ’å…¥
+@æ€è·¯:(1)s->prior=p->prior (2)p->prior->next=s;(3)s->next=p;(4)p->prior=s 
 */
 void ListInsert_DuL(DuList *L)
 {
